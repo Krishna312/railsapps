@@ -1,0 +1,14 @@
+<h1>New article</h1>
+
+<%= form_for :article, url: articles_path do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br>
+
+  <%= f.label :content %><br>
+  <%= f.text_area :content %><br>
+
+  <%= f.label :published_date %><br>
+  <%= f.date_field :published_date %><br>
+
+  <%= f.submit "Submit", class: 'btn btn-primary' %>
+<% end %>
